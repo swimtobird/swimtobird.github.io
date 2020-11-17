@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  <meta name="baidu-site-verification" content>
+  <meta name="google-site-verification" content>
+  <meta name="msvalidate.01" content>
+  <meta name="360-site-verification" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- if page has tags, then add tags to keyword -->
+  
+  
+  <meta name="keywords" content=",php,hyperf,swoole,">
+  <!-- page.description has higher priority -->
+  <meta name="description" content="技术和日常点滴总结">
+  <link rel="shortcut icon" href="/images/logo.jpeg">
+  <title>
+    
+    Hyperf demo说明 | swimtobird的博客
+    
+  </title>
+
+  <link rel="canonical" href="/post/Hyperf demo说明.html">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/markdown.css">
+  <!-- Pygments Highlight CSS -->
+  <link rel="stylesheet" href="/css/highlight.css">
+  <link rel="stylesheet" href="/css/geektutu.css">
+  <!-- global function -->
+  <script>
+    window.globalAddScript = function (url, onload, onerror) {
+      var s = document.createElement('script');
+      s.src = url;
+      onload && (s.onload = onload);
+      onerror && (s.onerror = onerror);
+      document.body.appendChild(s);
+    }
+    window.globalAddCss = function (url) {
+      var s = document.createElement('link');
+      s.rel = 'stylesheet';
+      s.href = url;
+      document.body.appendChild(s);
+    }
+    window.getPosition = function (ele) {
+      var x = 0, y = 0;
+      while (ele) {
+        x += (ele.offsetLeft - ele.scrollLeft + ele.clientLeft);
+        y += (ele.offsetTop - ele.scrollTop + ele.clientTop);
+        ele = ele.offsetParent;
+      }
+      return { x: x, y: y };
+    }
+    window.getDom = function (str) { return document.querySelector(str) }
+  </script>
+  <!-- google ad -->
+  
+<link rel="alternate" href="/feed.xml" title="swimtobird的博客" type="application/rss+xml">
+</head>
+
+<body>
+    <header class="gkt-header col-xs-12 padding-0">
+    <div id="gkt-nav" class="gkt-header-container">
+        <a href="/" class="gkt-header-title float-left">
+            <img class="float-left" src="/images/logo.jpeg" alt="">
+            <span>swimtobird的博客</span>
+        </a>
+        <nav class="gkt-header-nav text-right">
+            <ul>
+                <li><a class="hidden-xs" href="/feed.xml">订阅</a></li>
+                <li><a href="/series/">专题</a></li>
+                <li><a href="/archives/">归档</a></li>
+                <li><a href="/post/link.html">友链</a></li>
+                <li><a href="/post/about.html">关于</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="gkt-cate-nav" class="gkt-header-container hidden-xs">
+        
+        <nav class="gkt-header-nav float-left">
+            <ul>
+                
+                
+                <li class="gkt-cate-name float-left active">
+                    <a class="float-left" href="/post/借用docker轻量快速配置php全家桶.html">技术</a>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="gkt-header-placeholder" style="height: 44px"></div>
+<div class="gkt-header-placeholder hidden-xs" style="height: 44px"></div>
+<script>
+    (function () {
+        window.addEventListener('scroll', function () {
+            if (window.innerWidth < 768) {
+                return;
+            }
+            var nav = document.querySelector('#gkt-nav');
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            scrollTop > 50 && (nav.classList.add('hide'));
+            scrollTop <= 50 && (nav.classList.remove('hide'));
+        });
+        var cateNavs = document.querySelectorAll('#gkt-cate-nav>nav>ul>li');
+        [].slice.call(cateNavs).forEach(function (item) {
+            var sub = item.querySelector('.gkt-sub-cate');
+            if (!sub) return;
+            item.addEventListener('mouseenter', function (e) { sub.style.display = 'block'; }, false);
+            item.addEventListener('mouseleave', function (e) { sub.style.display = 'none'; }, false);
+        })
+    })();
+</script>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Main Content -->
+<main class="col-xs-12 padding-0 markdown-it">
+    <!-- Post Container -->
+    
+    
+    <!-- Post Content -->
+<div class="float-left post-container box-shadow">
+    <div class="u-arrow-wrapper hidden-xs">
+        
+        <a class="float-left" href="/post/Hyperf开发.html"><i class="u-arrow-left"></i></a>
+        
+        
+        <a class="float-right" href="/post/cenos6.9下docker安装yapi.html"><i class="u-arrow-right"></i></a>
+        
+    </div>
+    <article class="col-xs-12">
+        <h1> Hyperf demo说明 </h1>
+        
+        
+        <div class="hidden-lg hidden-md series_links">
+            <p> <strong> 技术系列文章链接：</strong></p>
+            <ul>
+                
+                <li>
+                    <a href="/post/借用docker轻量快速配置php全家桶.html">借用docker轻量快速配置php全家桶</a>
+                    <span class="post-item-date">(Aug 5, 2017)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/接口设计.html">接口设计</a>
+                    <span class="post-item-date">(Aug 13, 2017)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/sql.html">SQLAdvisor总结</a>
+                    <span class="post-item-date">(Mar 31, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/ab.html">算法压测方案</a>
+                    <span class="post-item-date">(Mar 31, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/linux.html">linux常用命令记录</a>
+                    <span class="post-item-date">(Sep 10, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Swoole_Tracker安装使用说明.html">Swoole_Tracker安装使用说明</a>
+                    <span class="post-item-date">(Oct 15, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/php性能追踪及分析工具比较.html">php性能追踪及分析工具对比</a>
+                    <span class="post-item-date">(Oct 19, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Swoole_tracker_user.html">Swoole_tracker 如何跟踪与分析</a>
+                    <span class="post-item-date">(Oct 20, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/js插件使用directive包裹.html">js插件使用directive包裹</a>
+                    <span class="post-item-date">(Nov 12, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/关于css、js404问题解决方案.html">关于css、js404问题解决方案</a>
+                    <span class="post-item-date">(Nov 12, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/elk(日志采集分析系统)安装部署.html">elk(日志采集分析系统)安装部署</a>
+                    <span class="post-item-date">(Nov 23, 2018)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Vuex使用方案.html">Vuex使用</a>
+                    <span class="post-item-date">(Jun 21, 2019)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/CORS规范.html">CORS 规范</a>
+                    <span class="post-item-date">(Jun 21, 2019)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/显式路由.html">显式路由与隐式路由</a>
+                    <span class="post-item-date">(Jun 21, 2019)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/武林科技技术架构演变.html">武林科技技术架构演变</a>
+                    <span class="post-item-date">(Jul 22, 2019)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Vuex列表分页搜索.html">Vue 列表分页搜索方案</a>
+                    <span class="post-item-date">(Nov 11, 2019)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/elk错误记录.html">elk错误记录</a>
+                    <span class="post-item-date">(Oct 5, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/jenkins安装及坑记录.html">jenkins安装及坑记录</a>
+                    <span class="post-item-date">(Oct 15, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/ab压测各框架对比.html">ab压测公司各框架对比</a>
+                    <span class="post-item-date">(Oct 16, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Hyperf开发.html">Hyperf安装</a>
+                    <span class="post-item-date">(Oct 16, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Hyperf demo说明.html">Hyperf demo说明</a>
+                    <span class="post-item-date">(Oct 18, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/cenos6.9下docker安装yapi.html">cenos6.9下docker安装yapi</a>
+                    <span class="post-item-date">(Oct 20, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Jenkins 如何持续构建.html">Jenkins 如何持续构建</a>
+                    <span class="post-item-date">(Oct 20, 2020)</span>
+                </li>
+                
+            </ul>
+        </div>
+        
+        
+        <h2 id="定义目录结构"><a href="#定义目录结构" class="headerlink" title="定义目录结构"></a>定义目录结构</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">├── app</span><br><span class="line">│   ├── Controller 控制器目录</span><br><span class="line">│   ├── Exception 异常以及异常处理器目录</span><br><span class="line">│   ├── Listener 监听器目录</span><br><span class="line">│   ├── Middleware 中间件目录</span><br><span class="line">│   ├── Model 数据模型目录</span><br><span class="line">│   ├── Request 请求验证器目录</span><br><span class="line">│   ├── Service 服务目录，业务逻辑处理，所有业务模块公用</span><br><span class="line">│   └── helpers.php 辅助方法</span><br></pre></td></tr></table></figure>
+<h2 id="调用逻辑"><a href="#调用逻辑" class="headerlink" title="调用逻辑"></a>调用逻辑</h2><p>控制器  —–&gt;验证器—–&gt; 服务 —–&gt; 模型</p>
+<h2 id="编写注册"><a href="#编写注册" class="headerlink" title="编写注册"></a>编写注册</h2><blockquote>
+<p>该涉及控制器、请求验证器、服务、模型、异常、异常处理器开发及其相关配置</p>
+</blockquote>
+<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>保存新用户手机号与密码</p>
+<h3 id="开发过程"><a href="#开发过程" class="headerlink" title="开发过程"></a>开发过程</h3><p>数据库定义<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> CREATE TABLE `users` (</span><br><span class="line">  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `phone` varchar(15) COLLATE utf8mb4_unicode_ci DEFAULT NULL,</span><br><span class="line">  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,</span><br><span class="line">  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,</span><br><span class="line">  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;</span><br></pre></td></tr></table></figure></p>
+<p>生成迁移<br><code>php bin/hyperf.php gen:migration create_users_table</code><br>生成User控制器<br><code>php bin/hyperf.php gen:controller UserController</code></p>
+<p>生成User请求验证器</p>
+<p><code>php bin/hyperf.php gen:request UserRequest</code></p>
+<p>生成User模型</p>
+<p><code>php bin/hyperf.php gen:model User</code></p>
+<p>编写迁移脚步</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//migration/xxxx_xx_xx_xxxxxx_create_users_table</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">up</span><span class="params">()</span>: <span class="title">void</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">      Schema::create(<span class="string">'users'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(Blueprint $table)</span> </span>&#123;</span><br><span class="line">          $table-&gt;bigIncrements(<span class="string">'id'</span>);</span><br><span class="line">          $table-&gt;string(<span class="string">'phone'</span>, <span class="number">15</span>)-&gt;nullable();</span><br><span class="line">          $table-&gt;string(<span class="string">'password'</span>, <span class="number">100</span>)-&gt;nullable(<span class="keyword">false</span>);</span><br><span class="line">          $table-&gt;timestamp(<span class="string">'created_at'</span>)</span><br><span class="line">              -&gt;default(Db::raw(<span class="string">'CURRENT_TIMESTAMP'</span>));</span><br><span class="line">          $table-&gt;timestamp(<span class="string">'updated_at'</span>)</span><br><span class="line">              -&gt;default(Db::raw(<span class="string">'CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'</span>));</span><br><span class="line">      &#125;);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>编写验证规则</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// app/Request/UserRequest.php</span></span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">rules</span><span class="params">()</span>: <span class="title">array</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> [</span><br><span class="line">          <span class="string">'phone'</span> =&gt; [</span><br><span class="line">              <span class="string">'required'</span>,</span><br><span class="line">              <span class="string">'regex:'</span> . china_tel_regex(),</span><br><span class="line">          ],</span><br><span class="line">          <span class="string">'password'</span> =&gt; <span class="string">'required|string'</span>,</span><br><span class="line">      ];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">messages</span><span class="params">()</span>: <span class="title">array</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> [</span><br><span class="line">          <span class="string">'phone.required'</span> =&gt; <span class="string">'请填写手机号'</span>,</span><br><span class="line">          <span class="string">'phone.regex'</span> =&gt; <span class="string">'填写合法手机号'</span>,</span><br><span class="line">          <span class="string">'password.required'</span> =&gt; <span class="string">'请填写密码'</span>,</span><br><span class="line">      ];</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>创建App/Exception/BusinessException.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//App/Exception/BusinessException.php</span></span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">Server</span>\<span class="title">Exception</span>\<span class="title">ServerException</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BusinessException</span> <span class="keyword">extends</span> <span class="title">ServerException</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>创建app/Exception/ValidationExceptionHandler.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//app/Exception/ValidationExceptionHandler.php</span></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span>(strict_types=<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">App</span>\<span class="title">Exception</span>\<span class="title">Handler</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">ExceptionHandler</span>\<span class="title">ExceptionHandler</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">HttpMessage</span>\<span class="title">Stream</span>\<span class="title">SwooleStream</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">Utils</span>\<span class="title">Arr</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">Validation</span>\<span class="title">ValidationException</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Psr</span>\<span class="title">Http</span>\<span class="title">Message</span>\<span class="title">ResponseInterface</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Throwable</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ValidationExceptionHandler</span> <span class="keyword">extends</span> <span class="title">ExceptionHandler</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">handle</span><span class="params">(Throwable $throwable, ResponseInterface $response)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//阻止异常冒泡</span></span><br><span class="line">        <span class="keyword">$this</span>-&gt;stopPropagation();</span><br><span class="line">        <span class="comment">//返回自定义错误数据</span></span><br><span class="line">        $result = [</span><br><span class="line">            <span class="string">'status'</span> =&gt; <span class="number">1</span>,</span><br><span class="line">            <span class="string">'error'</span> =&gt; current(Arr::dot($throwable-&gt;errors())),</span><br><span class="line">        ];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> $response</span><br><span class="line">            -&gt;withAddedHeader(<span class="string">'content-type'</span>, <span class="string">'application/json'</span>)</span><br><span class="line">            -&gt;withBody(<span class="keyword">new</span> SwooleStream(json_encode($result, JSON_UNESCAPED_UNICODE)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">isValid</span><span class="params">(Throwable $throwable)</span>: <span class="title">bool</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> $throwable <span class="keyword">instanceof</span> ValidationException;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>创建app/Exception/BusinessExceptionHandler.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//app/Exception/BusinessExceptionHandler.php</span></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span>(strict_types=<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">App</span>\<span class="title">Exception</span>\<span class="title">Handler</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> <span class="title">App</span>\<span class="title">Exception</span>\<span class="title">BusinessException</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">ExceptionHandler</span>\<span class="title">ExceptionHandler</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">HttpMessage</span>\<span class="title">Stream</span>\<span class="title">SwooleStream</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Psr</span>\<span class="title">Http</span>\<span class="title">Message</span>\<span class="title">ResponseInterface</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Throwable</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BusinessExceptionHandler</span> <span class="keyword">extends</span> <span class="title">ExceptionHandler</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">handle</span><span class="params">(Throwable $throwable, ResponseInterface $response)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//阻止异常冒泡</span></span><br><span class="line">        <span class="keyword">$this</span>-&gt;stopPropagation();</span><br><span class="line">        <span class="comment">//返回自定义错误数据</span></span><br><span class="line">        $result = [</span><br><span class="line">            <span class="string">'status'</span> =&gt; <span class="number">1</span>,</span><br><span class="line">            <span class="string">'error'</span> =&gt; $throwable-&gt;getMessage(),</span><br><span class="line">        ];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> $response</span><br><span class="line">            -&gt;withAddedHeader(<span class="string">'content-type'</span>, <span class="string">'application/json'</span>)</span><br><span class="line">            -&gt;withBody(<span class="keyword">new</span> SwooleStream(json_encode($result, JSON_UNESCAPED_UNICODE)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">isValid</span><span class="params">(Throwable $throwable)</span>: <span class="title">bool</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> $throwable <span class="keyword">instanceof</span> BusinessException;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注册异常处理器</p>
+<p>目前仅支持配置文件的形式注册 <code>异常处理器(ExceptionHandler)</code>，配置文件位于 <code>config/autoload/exceptions.php</code>，将您的自定义异常处理器配置在对应的 <code>server</code> 下即可：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// config/autoload/exceptions.php</span></span><br><span class="line"> <span class="keyword">return</span> [</span><br><span class="line">    <span class="string">'handler'</span> =&gt; [</span><br><span class="line">        <span class="string">'http'</span> =&gt; [</span><br><span class="line">          <span class="comment">/**</span></span><br><span class="line"><span class="comment">           * ......</span></span><br><span class="line"><span class="comment">           */</span></span><br><span class="line">            App\<span class="keyword">Exception</span>\Handler\ValidationExceptionHandler::class,</span><br><span class="line">            App\<span class="keyword">Exception</span>\Handler\BusinessExceptionHandler::class</span><br><span class="line">        ],</span><br><span class="line">    ],</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+<p>创建 app/Service/UserService.php，编写注册方法</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">// app/Service/UserService.php</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">register</span><span class="params">(array $data)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">      $exists = User::query()-&gt;where(<span class="string">'phone'</span>, Arr::get($data, <span class="string">'phone'</span>))-&gt;exists();</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> ($exists) &#123;</span><br><span class="line">          <span class="keyword">throw</span> <span class="keyword">new</span> BusinessException(<span class="string">'手机号已被注册'</span>);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      $data = Arr::set($data, <span class="string">'password'</span>, md5($data[<span class="string">'password'</span>]));</span><br><span class="line"></span><br><span class="line">      $user = <span class="keyword">new</span> User();</span><br><span class="line"></span><br><span class="line">      $user-&gt;phone = Arr::get($data, <span class="string">'phone'</span>);</span><br><span class="line">      $user-&gt;password = Arr::get($data, <span class="string">'password'</span>);</span><br><span class="line">      $user-&gt;save();</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> $user;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>编写控制器调用处理方法</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//app/Controller/UserController.php</span></span><br><span class="line">		<span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">store</span><span class="params">(UserRequest $request)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//返回通过检验的数组</span></span><br><span class="line">        $userData = $request-&gt;validated();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">$this</span>-&gt;userService-&gt;register($userData);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> success();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>配置路由</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//config/route.php</span></span><br><span class="line">Router::addRoute(<span class="string">'POST'</span>, <span class="string">'/user'</span>, <span class="string">'App\Controller\UserController@store'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="编写解密中间件"><a href="#编写解密中间件" class="headerlink" title="编写解密中间件"></a>编写解密中间件</h2><blockquote>
+<p>该模块涉及中间件开发及配置</p>
+</blockquote>
+<h3 id="需求-1"><a href="#需求-1" class="headerlink" title="需求"></a>需求</h3><p>在中间件中统一处理客户端加密的请求参数，解密后注入Request中</p>
+<h3 id="开发过程-1"><a href="#开发过程-1" class="headerlink" title="开发过程"></a>开发过程</h3><p>生成解密中间件<br><code>php bin/hyperf.php gen:middleware DecryptMiddleware</code></p>
+<p>在app/helpers.php添加解密方法</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (! function_exists(<span class="string">'encrypt'</span>)) &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> $data</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> string</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">encrypt</span><span class="params">($data)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        $data = openssl_encrypt(</span><br><span class="line">            json_encode($data),</span><br><span class="line">            <span class="string">'aes-128-ecb'</span>,</span><br><span class="line">            env(<span class="string">'AES_PRIVATE_KEY'</span>),</span><br><span class="line">            OPENSSL_RAW_DATA</span><br><span class="line">        );</span><br><span class="line">        <span class="keyword">return</span> base64_encode($data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编辑解密中间件方法</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//app/Middleware/DecryptMiddleware.php</span></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span>(strict_types=<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">App</span>\<span class="title">Middleware</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">HttpServer</span>\<span class="title">Contract</span>\<span class="title">RequestInterface</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">HttpServer</span>\<span class="title">Response</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hyperf</span>\<span class="title">Utils</span>\<span class="title">Context</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Psr</span>\<span class="title">Container</span>\<span class="title">ContainerInterface</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Psr</span>\<span class="title">Http</span>\<span class="title">Message</span>\<span class="title">ResponseInterface</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Psr</span>\<span class="title">Http</span>\<span class="title">Message</span>\<span class="title">ServerRequestInterface</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Psr</span>\<span class="title">Http</span>\<span class="title">Server</span>\<span class="title">MiddlewareInterface</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Psr</span>\<span class="title">Http</span>\<span class="title">Server</span>\<span class="title">RequestHandlerInterface</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DecryptMiddleware</span> <span class="keyword">implements</span> <span class="title">MiddlewareInterface</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@var</span> ContainerInterface</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">protected</span> $container;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@var</span> Response</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">protected</span> $response;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@var</span> RequestInterface</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">protected</span> $request;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span><span class="params">(ContainerInterface $container, RequestInterface $request)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">$this</span>-&gt;container = $container;</span><br><span class="line">        <span class="keyword">$this</span>-&gt;request = $request;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">process</span><span class="params">(ServerRequestInterface $request, RequestHandlerInterface $handler)</span>: <span class="title">ResponseInterface</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        $requestData = <span class="keyword">$this</span>-&gt;request-&gt;input(<span class="string">'requestData'</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> ($requestData) &#123;</span><br><span class="line">            $requestData = decrypt($requestData);</span><br><span class="line">            <span class="keyword">if</span> ($requestData) &#123;</span><br><span class="line">                $parms = array_merge(<span class="keyword">$this</span>-&gt;request-&gt;all(), $requestData);</span><br><span class="line">                $request = $request-&gt;withQueryParams($parms);</span><br><span class="line"></span><br><span class="line">                <span class="comment">/*</span></span><br><span class="line"><span class="comment">                 * 由于Hyperf\HttpServer\Request的getInputData是放协程中并且是自命名，需要指定更新改变对象才能传递上下文</span></span><br><span class="line"><span class="comment">                 */</span></span><br><span class="line">                Context::override(<span class="string">'http.request.parsedData'</span>, <span class="function"><span class="keyword">function</span> <span class="params">()</span> <span class="title">use</span> <span class="params">($request)</span> </span>&#123;</span><br><span class="line">                    <span class="keyword">if</span> (is_array($request-&gt;getParsedBody())) &#123;</span><br><span class="line">                        $data = $request-&gt;getParsedBody();</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        $data = [];</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">return</span> array_merge($data, $request-&gt;getQueryParams());</span><br><span class="line">                &#125;);</span><br><span class="line">                $request = Context::set(ServerRequestInterface::class, $request);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> $handler-&gt;handle($request);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>配置中间件</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//config/autoload/middleware.php</span></span><br><span class="line"><span class="keyword">return</span> [</span><br><span class="line">    <span class="string">'http'</span> =&gt; [</span><br><span class="line">          <span class="comment">/**</span></span><br><span class="line"><span class="comment">           * ......</span></span><br><span class="line"><span class="comment">           */</span>    </span><br><span class="line">        App\Middleware\DecryptMiddleware::class,</span><br><span class="line">    ],</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+<h2 id="编写登录"><a href="#编写登录" class="headerlink" title="编写登录"></a>编写登录</h2><blockquote>
+<p>该涉及控制器、请求验证器、服务、模型、缓存、异常、异常处理器开发及其相关配置</p>
+</blockquote>
+<h3 id="需求-2"><a href="#需求-2" class="headerlink" title="需求"></a>需求</h3><p>通过手机号与密码登录，返回登录成功凭证</p>
+<h3 id="开发过程-2"><a href="#开发过程-2" class="headerlink" title="开发过程"></a>开发过程</h3><p>数据库定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE `user_token` (</span><br><span class="line">  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `user_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,</span><br><span class="line">  `access_token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,</span><br><span class="line">  `refresh_token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,</span><br><span class="line">  `effective_time` int(10) unsigned NOT NULL DEFAULT &apos;604800&apos; COMMENT &apos;有限时长(单位秒)&apos;,</span><br><span class="line">  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,</span><br><span class="line">  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;</span><br></pre></td></tr></table></figure>
+<p>编写模型</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//app/Model/UserToken</span></span><br><span class="line"><span class="keyword">const</span> EFFECTIVE_TIME = <span class="number">60</span> * <span class="number">60</span> * <span class="number">24</span> * <span class="number">14</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">createToken</span><span class="params">($user_id)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">      $access_token = md5($user_id . time() . random_bytes(<span class="number">2</span>));</span><br><span class="line">      $refresh_token = md5($user_id . time() . random_bytes(<span class="number">2</span>));</span><br><span class="line"></span><br><span class="line">      $data = [</span><br><span class="line">          <span class="string">'user_id'</span> =&gt; $user_id,</span><br><span class="line">          <span class="string">'access_token'</span> =&gt; $access_token,</span><br><span class="line">          <span class="string">'refresh_token'</span> =&gt; $refresh_token,</span><br><span class="line">          <span class="string">'effective_time'</span> =&gt; <span class="keyword">self</span>::EFFECTIVE_TIME,</span><br><span class="line">      ];</span><br><span class="line"></span><br><span class="line">      <span class="keyword">self</span>::insert($data);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> $data;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>编写登录方法</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">// app/Service/UserService.php</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">login</span><span class="params">(array $data)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">      $user = User::getFirstByWhere([<span class="string">'phone'</span> =&gt; Arr::get($data, <span class="string">'phone'</span>)]);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (! $user) &#123;</span><br><span class="line">          <span class="keyword">throw</span> <span class="keyword">new</span> BusinessException(<span class="string">'用户不存在'</span>);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      $hash = password_hash(md5(Arr::get($data, <span class="string">'password'</span>)), PASSWORD_DEFAULT);</span><br><span class="line">      <span class="keyword">if</span> (! password_verify($user-&gt;password, $hash)) &#123;</span><br><span class="line">          <span class="keyword">throw</span> <span class="keyword">new</span> BusinessException(<span class="string">'密码错误'</span>);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      $result = UserToken::createToken($user-&gt;id);</span><br><span class="line"></span><br><span class="line">      $result = Arr::except($result, <span class="string">'user_id'</span>);</span><br><span class="line"></span><br><span class="line">      cache()-&gt;set(</span><br><span class="line">          <span class="string">'token:'</span> . Arr::get($result, <span class="string">'access_token'</span>),</span><br><span class="line">          $user-&gt;id,</span><br><span class="line">          Arr::get($result, <span class="string">'effective_time'</span>)</span><br><span class="line">      );</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> $result;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>编写控制器调用处理方法</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//app/Controller/UserController.php</span></span><br><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">login</span><span class="params">(UserRequest $request)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">      $userData = $request-&gt;validated();</span><br><span class="line"></span><br><span class="line">      $result = <span class="keyword">$this</span>-&gt;userService-&gt;login($userData);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> success($result);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>配置路由</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//config/route.php</span></span><br><span class="line">Router::addRoute(<span class="string">'POST'</span>, <span class="string">'/user/token'</span>, <span class="string">'App\Controller\UserController@login'</span>);</span><br></pre></td></tr></table></figure>
+
+        <script src="/js/qrious.min.js"></script>
+
+        <hr>
+        <div>
+            
+            <p>
+                <span>专题: </span>
+                
+                <a href="/series/#技术">
+                    <code key="技术" class="post-label">技术</code>
+                </a>
+                
+            </p>
+            
+            <p>
+                <span>本文发表于 2020-10-18，最后修改于 2020-11-17。</span>
+            </p>
+            <!-- 文章末尾的提示 start -->
+            
+            
+            
+                
+            <!-- 文章末尾的提示 end -->
+        </div>
+        <hr />
+        <p name="pagination" style="font-size: 1.2em">
+    
+    <a class="float-left" href="/post/Hyperf开发.html">上一篇 « Hyperf安装</a>
+    
+    
+    <a class="float-right" href="/post/cenos6.9下docker安装yapi.html">下一篇 » cenos6.9下docker安装yapi</a>
+    
+</p>
+    </article>
+    <!-- 赞赏 -->
+    <!--打赏-->
+
+    <!-- 推荐阅读三篇文章 -->
+    <div class="col-xs-12">
+        <h3>推荐阅读</h3>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#vue"
+                    title="vue">vue</a>
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#vuex"
+                    title="vuex">vuex</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a href="/post/Vuex列表分页搜索.html" class="title">
+                Vue 列表分页搜索方案
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2019-11-11，</span>
+                    <span class="hidden-xs">全文9308字，</span>
+                    <span>阅读约32分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#js"
+                    title="js">js</a>
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#css"
+                    title="css">css</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a href="/post/关于css、js404问题解决方案.html" class="title">
+                关于css、js404问题解决方案
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2018-11-12，</span>
+                    <span class="hidden-xs">全文636字，</span>
+                    <span>阅读约3分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#api"
+                    title="api">api</a>
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#Restful"
+                    title="Restful">Restful</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a href="/post/接口设计.html" class="title">
+                接口设计
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2017-08-13，</span>
+                    <span class="hidden-xs">全文2663字，</span>
+                    <span>阅读约9分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <div class="col-xs-12">
+        <!-- 标签列表 -->
+        <!-- Featured Tags -->
+<style>
+    #featured-tag .post-tag-item {
+        font-size: 12px;
+        line-height: 30px;
+        display: inline-block;
+        height: 30px;
+        margin: 5px 0px;
+        padding: 0 7px;
+        color: #333;
+        border-radius: 15px;
+        background: #f6f6f6;
+    }
+
+    #featured-tag .post-tag-item:hover {
+        color: #337ab7;
+    }
+</style>
+<div id="featured-tag">
+    
+    <a class="post-tag-item" href="/tags/#jenkins" title="jenkins"
+        rel="2">#jenkins (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#持续构建" title="持续构建"
+        rel="2">#持续构建 (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#php" title="php"
+        rel="8">#php (8) </a>
+    
+    <a class="post-tag-item" href="/tags/#hyperf" title="hyperf"
+        rel="2">#hyperf (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#swoole" title="swoole"
+        rel="2">#swoole (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#cros" title="cros"
+        rel="1">#cros (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#vue" title="vue"
+        rel="2">#vue (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#vuex" title="vuex"
+        rel="2">#vuex (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#ab" title="ab"
+        rel="2">#ab (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#elk" title="elk"
+        rel="2">#elk (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#yapi" title="yapi"
+        rel="1">#yapi (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#centos6.9" title="centos6.9"
+        rel="1">#centos6.9 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#js" title="js"
+        rel="2">#js (2) </a>
+    
+    <a class="post-tag-item" href="/tags/#sqladvisor" title="sqladvisor"
+        rel="1">#sqladvisor (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#sql优化" title="sql优化"
+        rel="1">#sql优化 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#docker" title="docker"
+        rel="1">#docker (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#linux" title="linux"
+        rel="1">#linux (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#api" title="api"
+        rel="1">#api (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#Restful" title="Restful"
+        rel="1">#Restful (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#css" title="css"
+        rel="1">#css (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#架构" title="架构"
+        rel="1">#架构 (1) </a>
+    
+</div>
+    </div>
+    <!-- 评论 -->
+    
+    <div class="col-xs-12">
+        
+    </div>
+    
+</div>
+<aside class="float-left gkt-sidebar hidden-xs hidden-sm">
+    <div style="clear: both"></div>
+    <div class="gkt-sidebar-wrapper">
+        <section class="box-shadow"><style>
+    .gkt-summary {
+        border: 1px solid #DDDDDD;
+        border-radius: 3px;
+        padding: 5px;
+        width: 100%;
+    }
+
+
+    .gkt-summary nav {
+        overflow: hidden;
+    }
+
+    .gkt-summary nav a {
+        display: inline-block;
+        text-align: center;
+        color: #333;
+        font-size: 12px;
+    }
+
+    .gkt-summary nav span {
+        display: block;
+    }
+
+    .gkt-summary nav .middle {
+        border-left: 1px solid #eaecef;
+        border-right: 1px solid #eaecef;
+    }
+
+    .gkt-summary .number {
+        font-weight: bold;
+    }
+
+    .gkt-summary .link-list {
+        margin-top: 5px;
+        margin-bottom: -5px;
+        padding-top: 7px;
+        border-top: 1px dashed #999;
+        display: flex;
+    }
+
+    .gkt-summary .link-list a {
+        flex: 1;
+    }
+
+    .gkt-summary .link-list img {
+        width: 25px;
+        height: 25px;
+    }
+</style>
+
+<div class="gkt-summary">
+    <nav>
+        <a href="/" class="col-xs-4">
+            <span class="number">24</span><span>文章</span>
+        </a>
+        <a href="/series" class="col-xs-4 middle">
+            <span class="number">1</span><span>专题</span>
+        </a>
+        <a href="/tags" class="col-xs-4">
+            <span class="number">21</span><span>标签</span>
+        </a>
+    </nav>
+
+    
+</div></section>
+        
+        
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>技术</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/借用docker轻量快速配置php全家桶.html"
+                        class="">借用docker轻量快速配置php全家桶</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/接口设计.html"
+                        class="">接口设计</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/sql.html"
+                        class="">SQLAdvisor总结</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/ab.html"
+                        class="">算法压测方案</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/linux.html"
+                        class="">linux常用命令记录</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Swoole_Tracker安装使用说明.html"
+                        class="">Swoole_Tracker安装使用说明</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/php性能追踪及分析工具比较.html"
+                        class="">php性能追踪及分析工具对比</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Swoole_tracker_user.html"
+                        class="">Swoole_tracker 如何跟踪与分析</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/js插件使用directive包裹.html"
+                        class="">js插件使用directive包裹</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/关于css、js404问题解决方案.html"
+                        class="">关于css、js404问题解决方案</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/elk(日志采集分析系统)安装部署.html"
+                        class="">elk(日志采集分析系统)安装部署</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Vuex使用方案.html"
+                        class="">Vuex使用</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/CORS规范.html"
+                        class="">CORS 规范</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/显式路由.html"
+                        class="">显式路由与隐式路由</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/武林科技技术架构演变.html"
+                        class="">武林科技技术架构演变</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Vuex列表分页搜索.html"
+                        class="">Vue 列表分页搜索方案</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/elk错误记录.html"
+                        class="">elk错误记录</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/jenkins安装及坑记录.html"
+                        class="">jenkins安装及坑记录</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/ab压测各框架对比.html"
+                        class="">ab压测公司各框架对比</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Hyperf开发.html"
+                        class="">Hyperf安装</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Hyperf demo说明.html"
+                        class="gkt-sidebar-active">Hyperf demo说明</a>
+                    
+                    <!-- Table of Contents -->
+<div id="sidebar-toc">
+  <!-- TOC  -->
+  
+  
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#定义目录结构"><span class="toc-nav-text">定义目录结构</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#调用逻辑"><span class="toc-nav-text">调用逻辑</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#编写注册"><span class="toc-nav-text">编写注册</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#编写解密中间件"><span class="toc-nav-text">编写解密中间件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#编写登录"><span class="toc-nav-text">编写登录</span></a></li></ol>
+  
+</div>
+
+<script>
+  (function () {
+    var h2 = document.querySelectorAll('article h2');
+    var h3 = document.querySelectorAll('article h3');
+    var linkList = document.querySelectorAll('#sidebar-toc a');
+
+    function findLinkElement(name) {
+      for (var i = 0; i < linkList.length; i++) {
+        var items = linkList[i].href.split('#');
+        if (items && items[items.length - 1] === encodeURIComponent(name)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function activeLink(titleList) {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = titleList.length - 1; i >= 0; i--) {
+        if (scrollTop - titleList[i].offsetTop > 0) {
+          var index = findLinkElement(titleList[i].id);
+          index != -1 && linkList[index].classList.add('gkt-sidebar-active');
+          break;
+        }
+      }
+    }
+
+    window.addEventListener("scroll", function (e) {
+      [].slice.call(linkList).forEach(function (link) {
+        link.classList.remove('gkt-sidebar-active');
+      })
+      activeLink(h2);
+    })
+  })();
+</script>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/cenos6.9下docker安装yapi.html"
+                        class="">cenos6.9下docker安装yapi</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Jenkins 如何持续构建.html"
+                        class="">Jenkins 如何持续构建</a>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
+        
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>最近的文章</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/Jenkins 如何持续构建.html">Jenkins 如何持续构建</a>
+                </li>
+                
+                <li>
+                    <a href="/post/cenos6.9下docker安装yapi.html">cenos6.9下docker安装yapi</a>
+                </li>
+                
+                <li>
+                    <a href="/post/Hyperf demo说明.html">Hyperf demo说明</a>
+                </li>
+                
+            </ul>
+        </section>
+        
+    </div>
+</aside>
+
+<script>
+    (function () {
+        function resizeUArrow() {
+            var s = getDom('.u-arrow-wrapper').style
+            var pc = getDom('.post-container')
+            s.left = getPosition(pc).x + 'px';
+            s.width = pc.clientWidth + 'px';
+        }
+        resizeUArrow()
+        window.addEventListener('resize', resizeUArrow);
+    })();
+</script>
+
+    
+
+<script>
+    (function () {
+        var ele = getDom('.gkt-sidebar-content')
+        if(!ele) return;
+        var wrapper = getDom('.gkt-sidebar-wrapper')
+        var last = 0
+        ele.style.maxHeight = ((window.innerHeight || 798) - 200) + 'px'
+        var f = function (e) {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var isDown = scrollTop > last;
+            var pos = getPosition(ele).y - scrollTop;
+            var downLimit = 50;
+            var upLimit = -100;
+            // uarrow.style.marginTop = scrollTop + 'px';
+            isDown && pos <= downLimit && wrapper.classList.add("gkt-sidebar-fixed");
+            !isDown && pos > upLimit && wrapper.classList.remove("gkt-sidebar-fixed");
+            last = scrollTop
+        }
+        f()
+        window.addEventListener("scroll", f)
+    })();
+</script>
+
+</main>
+    </div>
+    <style>
+    img#go-top {
+        position: fixed;
+        bottom: 100px;
+        width: 50px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+</style>
+<img id="go-top" src="/icon/top.png" class="hidden-xs" style="display: none" />
+<script>
+    (function () {
+        var goTop = document.getElementById('go-top');
+        var mainContainer = document.querySelector('.main-container');
+        
+        goTop.addEventListener('click', function () {
+            window.scroll(0, 0);
+        }, false);
+        window.addEventListener('scroll', function () {
+            var right = document.body.offsetWidth - mainContainer.getBoundingClientRect().right;
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            goTop.style.right = right + 10 + 'px'
+            scrollTop > 700 && (goTop.style.display = "block");
+            scrollTop <= 700 && (goTop.style.display = "none");
+        });
+    })();
+</script>
+    <style>
+    #geektutu-click-img-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+        z-index: 9999;
+    }
+
+    #geektutu-click-img-container img {
+        object-fit: contain;
+        background: #eaecef;
+        padding: 15px;
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        vertical-align: middle;
+    }
+</style>
+
+
+<div id="geektutu-click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+<script>
+    (function () {
+        var container = document.querySelector('#geektutu-click-img-container')
+        var targetImg = container.querySelector('img')
+        var imgs = document.querySelectorAll('article img');
+        targetImg.addEventListener('click', function (e) {
+            container.style.display = 'none';
+            e && e.stopPropagation && e.stopPropagation();
+        }, false);
+
+        for (var i = 0; i < imgs.length; ++i) {
+            var img = imgs[i];
+            img.addEventListener('click', (function (src, rate) {
+                return function (e) {
+                    e && e.stopPropagation && e.stopPropagation();
+                    if (window.innerWidth < 980) {
+                        return
+                    }
+                    targetImg.style.height = targetImg.style.width = 'auto';
+                    if (window.innerWidth / window.innerHeight > rate) {
+                        targetImg.style.height = (window.innerHeight - 20) + 'px';
+                    } else {
+                        targetImg.style.width = (window.innerWidth - 20) + 'px';
+                    }
+                    container.style.height = window.innerHeight + 'px'
+                    container.style.lineHeight = window.innerHeight + 'px'
+                    container.style.display = 'block';
+                    targetImg.src = src;
+                };
+            }(img.src, img.width / img.height)), false)
+        }
+    })();
+</script>
+    <!-- Footer -->
+    <!-- Footer -->
+<style>
+    footer {
+        width: 100%;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .footer-hexo img {
+        height: 20px;
+        margin-bottom: -5px;
+    }
+
+    .footer-hexo a {
+        color: #337ab7;
+    }
+</style>
+<footer class="text-center col-xs-12">
+    <p>
+        <small>© 2020 - swimtobird - </small>
+        <small>
+            <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn/"></a>
+        </small>
+    </p>
+    <p class="footer-hexo">
+        <!-- 但若直接使用或修改主题，请务必保留这段声明 -->
+        <small>Powered by <a target="_blank" href="https://hexo.io">Hexo</a> | Theme
+            <a target="_blank" href="https://geektutu.com">Geektutu</a>
+            <a href="https://github.com/geektutu/hexo-theme-geektutu">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIACIAUAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQQFBwIDBgj/2gAIAQEAAAAA9KrHSgAYL5/z6zZGuJd12uugbhq3uKtmuRtix20IS7lTLAfAAAn/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oACAECEAAAAAAB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAxAAAAAAAf/EADEQAAICAQIEBQEGBwAAAAAAAAECAwQFAAYREhORBxQhUlQxQVFic5KxJDJCYYGC0f/aAAgBAQABPwCFHnjWUzuvN6hV4cANSRLGjO9yRVUcSzMoA7jVXJYe5N0a2dhmk9kc0bN2GvLN8mbuNeWb5M3ca8s3yZu415Y/Jm7jXlm+TN3H/NeVPyZu40vOk3TZywK8wJ+v3EHVM/wsI/Dq2lrxN3Nnca16eti8chSAIoMbzByhMwP14kHVfwIiSaF5c96J6kwwCOTnHsYk8uvCrdmQy1TI4rJuz3cZLyGR/wCd4+YoOf8AEpUjXitubLYPG4paFsUxcuiGe7yc5gTW3LW44szXmobsi3Dhmic2+Z4+vCVH9CpraPiQ+QvbgTJrPFBWd5YpWrmNIIEXiRO32Pqt4p7cnfHk18lFBdmEVW1LVdIZGOrniTt6plrWKaO69yCykDRxwF+LMAewB0Txtr+Sf31VI8tEPw62fZt7N3Humtbpzz13ucX6CGSWMSuzpLyD1eNgeUka3PuvHbaxq3biTMHfkiSNCS78CwU+3Xg7Vu3MhuTcU6cq3Zemn3Eh2dv8Lzcut+29x1atKbHYqLJUhLwyNMwiZ3j9yDWOxUOV3tgb+3No5LDx1pi9+aeIwRlNY6bc+Jv+IFGrhLxtXJZ7VKcw81diiAAEn0JOrkWZyNfbEr0tz27UGQgkuGzXdIIvyowq99bRxk9ffO/L81SZBPZgEEroQroIxxMZOgeNsfkn99QypHGqO4Vl9CDrN4LDZkwyzyyQ2IgRHZrzGCZVP1XnQglT9oOtw4LC7iqV6uRkZoYpxKFSQpzFRw4EjVRMfSrQ1qqwxQxKFjjTgFUD7BoWYR6iVe+mtxt9Zwf9teaj4AdccPu5tedX5A/VrzUR+sy/q1CwksF19VEfDj/cnQRW+qg66cfsXtrpx+xe2unH7F7a6cfsXtrpx+xe2unH7F7a6cfsXtoxx+xe2gAAOA1//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAwEBPwB//9k="
+                    alt="Github Star">
+            </a>
+        </small>
+    </p>
+    
+    
+
+</footer>
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+    <script>
+        // 非本站网址，新开tab页签
+        (function () {
+            var stopBubble = function (e) {
+                e && e.stopPropagation && e.stopPropagation();
+            }
+            var links = document.querySelectorAll('a');
+            [].slice.call(links).forEach(function (item) {
+                if (item.href && item.href.indexOf(window.location.host) === -1) {
+                    item.target = '_blank'
+                }
+                // 阻止冒泡，不触发彩蛋。
+                item.addEventListener('click', stopBubble, false);
+            });
+            var article = document.querySelector('article');
+            article && article.addEventListener('click', stopBubble, false)
+        })();
+    </script>
+    
+<script>
+    (function (window, document, undefined) {
+        var hearts = [];
+        var keywords = ["点个赞", "留个言", "赞赏一下", "swimtobird的博客", "swimtobird.github.io"];
+        function randomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+        window.addEventListener('click', createWord)
+
+        function createWord(e) {
+            var d = document.createElement("span");
+            d.style.position = 'fixed';
+            d.style.zIndex = 9999;
+            d.style.color = 'rgb(' + [randomInt(255), randomInt(255), randomInt(255)].join(',') + ')';
+            d.innerHTML = keywords[randomInt(keywords.length)];
+            d.onselectstart = function () { return false; }
+
+            hearts.push({ el: d, x: e.clientX - 5, y: e.clientY - 5, alpha: 1, scale: 1 });
+            document.body.appendChild(d);
+        }
+        (function gameloop() {
+            for (var i = 0; i < hearts.length; i++) {
+                heart = hearts[i];
+                if (heart.alpha <= 0) {
+                    document.body.removeChild(heart.el);
+                    hearts.splice(i, 1);
+                    continue;
+                }
+                heart.y -= heart.alpha < 0.5 ? 2 : 1;
+                heart.scale += 0.002;
+                heart.alpha -= 0.013;
+                heart.el.style.transform = 'scale(' + heart.scale + ')';
+                heart.el.style.left = heart.x + 'px';
+                heart.el.style.top = heart.y + 'px';
+            }
+            setTimeout(gameloop, 10)
+        })();
+    })(window, document);
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>swimtobird的博客</title>
+    <link>http://swimtobird.github.io/</link>
+    
+    <image>
+      <url>http://swimtobird.github.io/images/logo.jpeg</url>
+      <title>swimtobird的博客</title>
+      <link>http://swimtobird.github.io/</link>
+    </image>
+    
+    <atom:link href="http://swimtobird.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>技术和日常点滴总结</description>
+    <pubDate>Tue, 17 Nov 2020 03:47:11 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Jenkins 如何持续构建</title>
+      <link>http://swimtobird.github.io/post/Jenkins%20%E5%A6%82%E4%BD%95%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA.html</link>
+      <guid>http://swimtobird.github.io/post/Jenkins%20%E5%A6%82%E4%BD%95%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA.html</guid>
+      <pubDate>Tue, 20 Oct 2020 11:12:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;构建体系&quot;&gt;&lt;a href=&quot;#构建体系&quot; class=&quot;headerlink&quot; title=&quot;构建体系&quot;&gt;&lt;/a&gt;构建体系&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/后端技术体系.png&quot; alt=&quot;后端技术体系&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;创建任务&quot;&gt;</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/jenkins/">jenkins</category>
+      
+      <category domain="http://swimtobird.github.io/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/">持续构建</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/Jenkins%20%E5%A6%82%E4%BD%95%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>cenos6.9下docker安装yapi</title>
+      <link>http://swimtobird.github.io/post/cenos6.9%E4%B8%8Bdocker%E5%AE%89%E8%A3%85yapi.html</link>
+      <guid>http://swimtobird.github.io/post/cenos6.9%E4%B8%8Bdocker%E5%AE%89%E8%A3%85yapi.html</guid>
+      <pubDate>Tue, 20 Oct 2020 07:16:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;1、启动-MongoDB&quot;&gt;&lt;a href=&quot;#1、启动-MongoDB&quot; class=&quot;headerlink&quot; title=&quot;1、启动 MongoDB&quot;&gt;&lt;/a&gt;&lt;strong&gt;1、启动 MongoDB&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;1.1拉取mongo镜像&lt;</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/yapi/">yapi</category>
+      
+      <category domain="http://swimtobird.github.io/tags/centos6-9/">centos6.9</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/cenos6.9%E4%B8%8Bdocker%E5%AE%89%E8%A3%85yapi.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hyperf demo说明</title>
+      <link>http://swimtobird.github.io/post/Hyperf%20demo%E8%AF%B4%E6%98%8E.html</link>
+      <guid>http://swimtobird.github.io/post/Hyperf%20demo%E8%AF%B4%E6%98%8E.html</guid>
+      <pubDate>Sun, 18 Oct 2020 11:12:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;定义目录结构&quot;&gt;&lt;a href=&quot;#定义目录结构&quot; class=&quot;headerlink&quot; title=&quot;定义目录结构&quot;&gt;&lt;/a&gt;定义目录结构&lt;/h2&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      <category domain="http://swimtobird.github.io/tags/hyperf/">hyperf</category>
+      
+      <category domain="http://swimtobird.github.io/tags/swoole/">swoole</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/Hyperf%20demo%E8%AF%B4%E6%98%8E.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hyperf安装</title>
+      <link>http://swimtobird.github.io/post/Hyperf%E5%BC%80%E5%8F%91.html</link>
+      <guid>http://swimtobird.github.io/post/Hyperf%E5%BC%80%E5%8F%91.html</guid>
+      <pubDate>Fri, 16 Oct 2020 11:12:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;安装swoole-若安装请跳过&quot;&gt;&lt;a href=&quot;#安装swoole-若安装请跳过&quot; class=&quot;headerlink&quot; title=&quot;安装swoole[若安装请跳过]&quot;&gt;&lt;/a&gt;安装swoole[若安装请跳过]&lt;/h2&gt;&lt;p&gt;没有安装的，可以按照&lt;a hre</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      <category domain="http://swimtobird.github.io/tags/hyperf/">hyperf</category>
+      
+      <category domain="http://swimtobird.github.io/tags/swoole/">swoole</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/Hyperf%E5%BC%80%E5%8F%91.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>ab压测公司各框架对比</title>
+      <link>http://swimtobird.github.io/post/ab%E5%8E%8B%E6%B5%8B%E5%90%84%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94.html</link>
+      <guid>http://swimtobird.github.io/post/ab%E5%8E%8B%E6%B5%8B%E5%90%84%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94.html</guid>
+      <pubDate>Fri, 16 Oct 2020 10:16:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;以下压测的测试机配置如下&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/ab/">ab</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/ab%E5%8E%8B%E6%B5%8B%E5%90%84%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>jenkins安装及坑记录</title>
+      <link>http://swimtobird.github.io/post/jenkins%E5%AE%89%E8%A3%85%E5%8F%8A%E5%9D%91%E8%AE%B0%E5%BD%95.html</link>
+      <guid>http://swimtobird.github.io/post/jenkins%E5%AE%89%E8%A3%85%E5%8F%8A%E5%9D%91%E8%AE%B0%E5%BD%95.html</guid>
+      <pubDate>Thu, 15 Oct 2020 11:12:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;1-安装命令行&quot;&gt;&lt;a href=&quot;#1-安装命令行&quot; class=&quot;headerlink&quot; title=&quot;1. 安装命令行&quot;&gt;&lt;/a&gt;1. 安装命令行&lt;/h2&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/jenkins/">jenkins</category>
+      
+      <category domain="http://swimtobird.github.io/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/">持续构建</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/jenkins%E5%AE%89%E8%A3%85%E5%8F%8A%E5%9D%91%E8%AE%B0%E5%BD%95.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>elk错误记录</title>
+      <link>http://swimtobird.github.io/post/elk%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.html</link>
+      <guid>http://swimtobird.github.io/post/elk%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.html</guid>
+      <pubDate>Mon, 05 Oct 2020 03:03:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;elk错误记录&quot;&gt;&lt;a href=&quot;#elk错误记录&quot; class=&quot;headerlink&quot; title=&quot;elk错误记录&quot;&gt;&lt;/a&gt;elk错误记录&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/elk/">elk</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/elk%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Vue 列表分页搜索方案</title>
+      <link>http://swimtobird.github.io/post/Vuex%E5%88%97%E8%A1%A8%E5%88%86%E9%A1%B5%E6%90%9C%E7%B4%A2.html</link>
+      <guid>http://swimtobird.github.io/post/Vuex%E5%88%97%E8%A1%A8%E5%88%86%E9%A1%B5%E6%90%9C%E7%B4%A2.html</guid>
+      <pubDate>Mon, 11 Nov 2019 03:12:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;一、Vuex配置&quot;&gt;&lt;a href=&quot;#一、Vuex配置&quot; class=&quot;headerlink&quot; title=&quot;一、Vuex配置&quot;&gt;&lt;/a&gt;一、Vuex配置&lt;/h3&gt;&lt;p&gt;a.引入&lt;strong&gt;Vuex.js&lt;/strong&gt;文件&lt;/p&gt;
+&lt;figure cla</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/vue/">vue</category>
+      
+      <category domain="http://swimtobird.github.io/tags/vuex/">vuex</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/Vuex%E5%88%97%E8%A1%A8%E5%88%86%E9%A1%B5%E6%90%9C%E7%B4%A2.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>武林科技技术架构演变</title>
+      <link>http://swimtobird.github.io/post/%E6%AD%A6%E6%9E%97%E7%A7%91%E6%8A%80%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E6%BC%94%E5%8F%98.html</link>
+      <guid>http://swimtobird.github.io/post/%E6%AD%A6%E6%9E%97%E7%A7%91%E6%8A%80%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E6%BC%94%E5%8F%98.html</guid>
+      <pubDate>Mon, 22 Jul 2019 11:12:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;一、当前1-0版本&quot;&gt;&lt;a href=&quot;#一、当前1-0版本&quot; class=&quot;headerlink&quot; title=&quot;一、当前1.0版本&quot;&gt;&lt;/a&gt;一、当前1.0版本&lt;/h2&gt;&lt;h3 id=&quot;1、技术架构&quot;&gt;&lt;a href=&quot;#1、技术架构</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/%E6%9E%B6%E6%9E%84/">架构</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/%E6%AD%A6%E6%9E%97%E7%A7%91%E6%8A%80%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E6%BC%94%E5%8F%98.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>CORS 规范</title>
+      <link>http://swimtobird.github.io/post/CORS%E8%A7%84%E8%8C%83.html</link>
+      <guid>http://swimtobird.github.io/post/CORS%E8%A7%84%E8%8C%83.html</guid>
+      <pubDate>Fri, 21 Jun 2019 03:16:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;为了更好管理和解决跨域请求, 结合 CORS 标准, 制订这份规范.&lt;/p&gt;
+&lt;h2 id=&quot;Nginx-Or-PHP&quot;&gt;&lt;a href=&quot;#Nginx-Or-PHP&quot; class=&quot;headerlink&quot; title=&quot;Nginx Or PHP?&quot;&gt;&lt;/a&gt;Nginx O</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      <category domain="http://swimtobird.github.io/tags/cros/">cros</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/CORS%E8%A7%84%E8%8C%83.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>显式路由与隐式路由</title>
+      <link>http://swimtobird.github.io/post/%E6%98%BE%E5%BC%8F%E8%B7%AF%E7%94%B1.html</link>
+      <guid>http://swimtobird.github.io/post/%E6%98%BE%E5%BC%8F%E8%B7%AF%E7%94%B1.html</guid>
+      <pubDate>Fri, 21 Jun 2019 03:16:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;首先它们两者哪个好，有个前提条件，有没有约定与规范。&lt;/p&gt;
+&lt;p&gt;先说这样一个场景，搞seo的同事某一天找到开发人员，需要你提供一个新路由，实现功能是和老路由一样的，基于这样情况下，如果使用隐式路由的，就需要在新控制器单独复制一份；而使用显式路由，好处显而易见，直接创建新</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/%E6%98%BE%E5%BC%8F%E8%B7%AF%E7%94%B1.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Vuex使用</title>
+      <link>http://swimtobird.github.io/post/Vuex%E4%BD%BF%E7%94%A8%E6%96%B9%E6%A1%88.html</link>
+      <guid>http://swimtobird.github.io/post/Vuex%E4%BD%BF%E7%94%A8%E6%96%B9%E6%A1%88.html</guid>
+      <pubDate>Fri, 21 Jun 2019 03:12:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;一、Vuex简介&quot;&gt;&lt;a href=&quot;#一、Vuex简介&quot; class=&quot;headerlink&quot; title=&quot;一、Vuex简介&quot;&gt;&lt;/a&gt;一、&lt;strong&gt;Vuex简介&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;​        uex 是一个专为 Vue.js 应用程</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/vue/">vue</category>
+      
+      <category domain="http://swimtobird.github.io/tags/vuex/">vuex</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/Vuex%E4%BD%BF%E7%94%A8%E6%96%B9%E6%A1%88.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>elk(日志采集分析系统)安装部署</title>
+      <link>http://swimtobird.github.io/post/elk(%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F)%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2.html</link>
+      <guid>http://swimtobird.github.io/post/elk(%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F)%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2.html</guid>
+      <pubDate>Fri, 23 Nov 2018 03:03:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;一、背景&quot;&gt;&lt;a href=&quot;#一、背景&quot; class=&quot;headerlink&quot; title=&quot;一、背景&quot;&gt;&lt;/a&gt;一、背景&lt;/h2&gt;&lt;p&gt;ELK设置有四个主要组件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Logstash：&lt;/strong&gt;用于处理传入</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/elk/">elk</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/elk(%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F)%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>js插件使用directive包裹</title>
+      <link>http://swimtobird.github.io/post/js%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8directive%E5%8C%85%E8%A3%B9.html</link>
+      <guid>http://swimtobird.github.io/post/js%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8directive%E5%8C%85%E8%A3%B9.html</guid>
+      <pubDate>Mon, 12 Nov 2018 11:12:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　在vue中使用bootstrap datetimepicker时发现双向绑定不起作用了，bootstrap datetimepicker修改的日期不会同步到data中；&lt;/p&gt;
+&lt;figure class=&quot;hig</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/js/">js</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/js%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8directive%E5%8C%85%E8%A3%B9.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于css、js404问题解决方案</title>
+      <link>http://swimtobird.github.io/post/%E5%85%B3%E4%BA%8Ecss%E3%80%81js404%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</link>
+      <guid>http://swimtobird.github.io/post/%E5%85%B3%E4%BA%8Ecss%E3%80%81js404%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</guid>
+      <pubDate>Mon, 12 Nov 2018 11:12:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;一、问题描述&quot;&gt;&lt;a href=&quot;#一、问题描述&quot; class=&quot;headerlink&quot; title=&quot;一、问题描述&quot;&gt;&lt;/a&gt;一、问题描述&lt;/h2&gt;&lt;p&gt;服务器日志出现相关css、js的map路由404情况&lt;/p&gt;
+&lt;h2 id=&quot;二、具体方案&quot;&gt;&lt;a href</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/js/">js</category>
+      
+      <category domain="http://swimtobird.github.io/tags/css/">css</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/%E5%85%B3%E4%BA%8Ecss%E3%80%81js404%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Swoole_tracker 如何跟踪与分析</title>
+      <link>http://swimtobird.github.io/post/Swoole_tracker_user.html</link>
+      <guid>http://swimtobird.github.io/post/Swoole_tracker_user.html</guid>
+      <pubDate>Sat, 20 Oct 2018 02:32:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;进程列表&quot;&gt;&lt;a href=&quot;#进程列表&quot; class=&quot;headerlink&quot; title=&quot;进程列表&quot;&gt;&lt;/a&gt;进程列表&lt;/h2&gt;&lt;p&gt;统计客户端fpm和cli的pid，可进行远程调试、查看调用栈以及进程CPU和内存占用统计&lt;br&gt;&lt;img src=&quot;http</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/Swoole_tracker_user.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>php性能追踪及分析工具对比</title>
+      <link>http://swimtobird.github.io/post/php%E6%80%A7%E8%83%BD%E8%BF%BD%E8%B8%AA%E5%8F%8A%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E6%AF%94%E8%BE%83.html</link>
+      <guid>http://swimtobird.github.io/post/php%E6%80%A7%E8%83%BD%E8%BF%BD%E8%B8%AA%E5%8F%8A%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E6%AF%94%E8%BE%83.html</guid>
+      <pubDate>Fri, 19 Oct 2018 03:32:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blackfire.io/docs/introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;blackfire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/php%E6%80%A7%E8%83%BD%E8%BF%BD%E8%B8%AA%E5%8F%8A%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E6%AF%94%E8%BE%83.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Swoole_Tracker安装使用说明</title>
+      <link>http://swimtobird.github.io/post/Swoole_Tracker%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html</link>
+      <guid>http://swimtobird.github.io/post/Swoole_Tracker%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html</guid>
+      <pubDate>Mon, 15 Oct 2018 08:32:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;一、Swoole-Tracker安装说明&quot;&gt;&lt;a href=&quot;#一、Swoole-Tracker安装说明&quot; class=&quot;headerlink&quot; title=&quot;一、Swoole_Tracker安装说明&quot;&gt;&lt;/a&gt;一、Swoole_Tracker安装说明&lt;/h2&gt;&lt;</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/Swoole_Tracker%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>linux常用命令记录</title>
+      <link>http://swimtobird.github.io/post/linux.html</link>
+      <guid>http://swimtobird.github.io/post/linux.html</guid>
+      <pubDate>Mon, 10 Sep 2018 02:45:31 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;收录了 linux 常用指令，这里面有个小技巧，基本上所有指令后面跟上 –h 可以显示其使用方法。故不必死记硬背，知其意乃通其形。&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/linux/">linux</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/linux.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>算法压测方案</title>
+      <link>http://swimtobird.github.io/post/ab.html</link>
+      <guid>http://swimtobird.github.io/post/ab.html</guid>
+      <pubDate>Sat, 31 Mar 2018 03:16:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;前期了解&quot;&gt;&lt;a href=&quot;#前期了解&quot; class=&quot;headerlink&quot; title=&quot;前期了解&quot;&gt;&lt;/a&gt;前期了解&lt;/h2&gt;&lt;h3 id=&quot;算法情况&quot;&gt;&lt;a href=&quot;#算法情况&quot; class=&quot;headerlink&quot; title=&quot;算法情况&quot;&gt;&lt;/a</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/ab/">ab</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/ab.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>SQLAdvisor总结</title>
+      <link>http://swimtobird.github.io/post/sql.html</link>
+      <guid>http://swimtobird.github.io/post/sql.html</guid>
+      <pubDate>Sat, 31 Mar 2018 03:12:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;1.开发人员大体完成数据表与CURD操作就没有下文了，等后续出现查询效率问题才迟迟开始优化&lt;/p&gt;
+&lt;p&gt;2.开发人员对索引的不合理使用，或</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/sqladvisor/">sqladvisor</category>
+      
+      <category domain="http://swimtobird.github.io/tags/sql%E4%BC%98%E5%8C%96/">sql优化</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/sql.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>接口设计</title>
+      <link>http://swimtobird.github.io/post/%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1.html</link>
+      <guid>http://swimtobird.github.io/post/%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1.html</guid>
+      <pubDate>Sun, 13 Aug 2017 05:23:12 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;1-API-地址和版本&quot;&gt;&lt;a href=&quot;#1-API-地址和版本&quot; class=&quot;headerlink&quot; title=&quot;1.API 地址和版本&quot;&gt;&lt;/a&gt;1.API 地址和版本&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;url&lt;/code&gt; 中指定 API 的版本是个很好</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/api/">api</category>
+      
+      <category domain="http://swimtobird.github.io/tags/Restful/">Restful</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://swimtobird.github.io/post/hello-world.html</link>
+      <guid>http://swimtobird.github.io/post/hello-world.html</guid>
+      <pubDate>Sun, 13 Aug 2017 05:13:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.</description>
+        
+      
+      
+      
+      
+      
+      
+      <comments>http://swimtobird.github.io/post/hello-world.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>借用docker轻量快速配置php全家桶</title>
+      <link>http://swimtobird.github.io/post/%E5%80%9F%E7%94%A8docker%E8%BD%BB%E9%87%8F%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEphp%E5%85%A8%E5%AE%B6%E6%A1%B6.html</link>
+      <guid>http://swimtobird.github.io/post/%E5%80%9F%E7%94%A8docker%E8%BD%BB%E9%87%8F%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEphp%E5%85%A8%E5%AE%B6%E6%A1%B6.html</guid>
+      <pubDate>Sat, 05 Aug 2017 08:41:03 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;闲聊扯淡话&quot;&gt;&lt;a href=&quot;#闲聊扯淡话&quot; class=&quot;headerlink&quot; title=&quot;闲聊扯淡话&quot;&gt;&lt;/a&gt;闲聊扯淡话&lt;/h2&gt;&lt;p&gt;小弟我是p（pai）h（huang）p（pian）程序猿,期间在windows下开发一直感觉相当痛苦，特别是没有一套</description>
+        
+      
+      
+      
+      
+      <category domain="http://swimtobird.github.io/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://swimtobird.github.io/tags/php/">php</category>
+      
+      <category domain="http://swimtobird.github.io/tags/docker/">docker</category>
+      
+      
+      <comments>http://swimtobird.github.io/post/%E5%80%9F%E7%94%A8docker%E8%BD%BB%E9%87%8F%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEphp%E5%85%A8%E5%AE%B6%E6%A1%B6.html#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
